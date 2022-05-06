@@ -8,20 +8,15 @@ namespace Condominio.Infrastructure.Mappings
     {
         public AutomapperProfile()
         {
-            CreateMap<Client, ClientDto>();
-            CreateMap<ClientDto, Client>();
+            CreateMap<Client, ClientDto>().ReverseMap();
 
-            CreateMap<Residential, ResidentialDto>();
-            CreateMap<ResidentialDto, Residential>();
+            CreateMap<Residential, ResidentialDto>().ReverseMap();
 
-            CreateMap<Payment, PaymentDto>();
-            CreateMap<PaymentDto, Payment>();
+            CreateMap<Payment, PaymentDto>().ReverseMap();
 
-            CreateMap<Due, DueDto>();
-            CreateMap<DueDto, Due>();
+            CreateMap<Due, DueDto>().ReverseMap();
 
-            CreateMap<Status, StatusDto>();
-            CreateMap<StatusDto, Status>();
+            CreateMap<Status, StatusDto>().ReverseMap();
         }
     }
 }
