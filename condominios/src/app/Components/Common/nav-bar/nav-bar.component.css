@@ -1,0 +1,141 @@
+.navbar {
+    background: #CC0000;
+    min-height: 44px;
+    padding: 4;
+    
+  }
+
+ul.navbar-nav {
+    flex-direction: row;
+    display: flex;
+    padding: 15px;
+    margin-right: 570px;
+    margin-bottom: 4px;
+  }
+
+a.nav-link {
+    color: #152733 !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    padding-left: 50px;
+    padding-right: 20px;
+  }
+  
+nav.nav-link {
+    color: #152733 !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    padding-left: 50px;
+    padding-right: 20px;
+  }
+
+.nav-link:hover > a {
+    display: block;
+  }
+  
+a.add {
+  color: #152733 !important;
+  font-size: 10px;
+  display: none;
+  position: absolute;
+  padding: 0px 0px;
+}
+
+a.list {
+  color: #152733 !important;
+  font-size: 10px;
+  display: none;
+  position: absolute;
+  padding: 20px 25px;
+}
+  
+.nav-item.tools-link {
+    position: absolute;
+    right: 30px; 
+  }
+
+.nav-item.tools-link.nav-link {
+    width: 45px;
+  }
+
+.nav-item.tools-link.nav-link.i {
+    margin: -3px 0 0 3px;
+    font-size: 25px;
+  }
+
+.nav-item.home-link {
+    position: absolute;
+    left: 85px;  
+  }
+
+.nav-item.home-link.nav-link {
+  width: 45px;
+  }
+
+.li.nav-item.home-link.span {
+  display: none;
+  }
+  
+.li.nav-item.home-link.nav-link.i {
+  margin: -4px 0 0 3px;
+  font-size: 25px;
+  }
+
+.li.nav-item {
+  margin: 0 15px;
+  }
+
+.li.nav-item.nav-link {
+  padding: 12px 11px 11px 11px;
+  }
+
+.li.nav-item.active {
+  background: #FF1F1F;
+  }
+
+.li.nav-item.active.nav-link {
+  color: #F2F1DC !important;
+  padding: 12px 11px 11px 11px;
+  }
+  
+.input-group-text {
+  display: flex;
+  padding: .375rem .75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  /* border: 1px solid #ced4da; */
+  border-radius: .25rem;
+  }  
+
+
+.btn-warning {
+  background: #FF7900;
+  border-color:#FF7900;
+  }
+
+.btn-success {
+  background: #1A8A5B;
+  border-color:#1A8A5B;
+  }
+
+.btn-primary {
+  background: #3F708C;
+  border-color: #3F708C;
+  }
+
+.btn-danger {
+  background: #FF0000;
+  border-color:#FF0000;
+  }  
+
+.collapse:not(.show) {
+    display: contents;
+  }

@@ -1,0 +1,89 @@
+header {
+    background: #233742;
+  }
+  
+.header-top {
+    padding: 15px 30px 0 30px;
+  }
+
+.search-btn {
+    background: transparent;
+    color: #284C61;
+    padding: 5px;
+  }
+
+.search-btn.i {
+    font-size: 22px;
+  }
+
+.form-inline {
+    float: right;
+  }
+
+input.form-control {
+    background: #284C61;
+    border: none; 
+  }
+
+.header-messages {
+    font-size: 24px;
+    padding: 0 3px;
+    color: #284C61;
+    float: right;
+  }
+
+.dropdown {
+    float: right;
+    margin-left: 20px;
+  }
+
+.btn-secondary {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    text-transform: none;
+    font-weight: 400;
+  }
+
+.btn-secondary.i {
+    padding-left: 10px;
+  }  
+  
+.header-client-name {
+    color: #F2F1DC;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 16px;
+  }
+  
+.header-bottom {
+    padding: 15px 30px 20px 30px;
+  }
+
+.header-date {
+    color:#fff;
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-right: 15px;
+  }
+  
+.header-timer {
+    color: #F2F1DC;
+    display: inline-block;
+    font-size: 0.8rem;
+  }
+  
+.section-name {
+    color: #315C75;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 16px;
+  }
+  
+.white-box {
+    background: #fff;
+    border-color: red;
+    border-radius:(4px);
+  }

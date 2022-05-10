@@ -1,0 +1,19 @@
+<div class="col-md-8 col-m-8">
+
+<table class="table table-lg">
+    <tr *ngFor="let client of condominioService.list">
+        <td>{{ client.firstName }}</td>
+        <td>{{ client.lastName }}</td>
+        <td>{{ client.phone }}</td>
+        <td>{{ client.email }}</td> 
+        <td>
+            <i class="far fa-edit fa-lg text-info" 
+                (click)="edit(client)" style="cursor: pointer;"></i>
+        </td>
+        <td>
+            <i class="far fa-trash-alt fa-lg text-danger" 
+                (click)="deleteClient(client.id!)" style="cursor: pointer;"></i>
+        </td>
+    </tr>
+</table>
+</div>

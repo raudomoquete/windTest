@@ -1,0 +1,94 @@
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  
+  body {
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background: #EAEAEA;
+    margin-bottom: 50px;
+    color:#424242;
+  }
+  
+  hr {
+    border-top: 4px solid rgba(0,0,0,.05);
+  }  
+  
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: #3F708C;
+  }
+  
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: #F2F1DC;
+    line-height: 34px;
+    float: left;
+    margin: 0;
+  }
+  
+  h4{
+    font-size: 1rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #3F708C;
+    padding-right: 16px;
+  }
+
+/*------------ Buttons -----------*/
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    font-size: 12px !important;
+  }
+  
+  .back-and-next-block {
+    display: inline-block;
+    margin-right: 15px; 
+  }
+  
+  button.go-back,
+  button.go-next {
+    border:none;
+    cursor: pointer;
+    display: inline-block; 
+    height: 33px;
+    width: 33px;
+  }
+  
+  button.go-back {
+    background:#fff url("/assets/images/back-arrow.svg") no-repeat center center;
+  }
+  button.go-next {
+    background:#fff url("/assets/images/next-arrow.svg") no-repeat center center;
+  }
+  
+  .btn-warning {
+    background: #FF7900;
+    border-color:#FF7900;
+  }
+  
+  .btn-success {
+    background: #1A8A5B;
+    border-color:#1A8A5B;
+  }
+  
+  .btn-primary {
+    background: #3F708C;
+    border-color: #3F708C;
+  }
+  
+  .btn-danger {
+    background: #FF0000;
+    border-color:#FF0000;
+  }
