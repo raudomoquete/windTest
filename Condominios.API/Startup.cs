@@ -50,6 +50,10 @@ namespace Condominios.API
             {
                 cfg.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
+            services.AddCors(options => options.AddPolicy("AllowWebApp",
+                             builder => builder.AllowAnyOrigin()
+                                               .AllowAnyHeader()
+                                               .AllowAnyMethod()));
 
             //Dependencies
             services.AddTransient<IResidentialRepository, ResidentialRepository>();            
@@ -69,9 +73,11 @@ namespace Condominios.API
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Condominios.API v1"));
+                //app.UseSwagger();
+                //app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Condominios.API v1"));
             }
+
+            app.UseCors("AllowWebApp");
 
             app.UseHttpsRedirection();
 

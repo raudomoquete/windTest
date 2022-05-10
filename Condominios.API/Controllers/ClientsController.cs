@@ -2,8 +2,11 @@
 using Condominio.Core.DTOs;
 using Condominio.Core.Entities;
 using Condominio.Core.Interfaces;
+using Condominio.Infrastructure.Data;
 using Condominios.API.Responses;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -15,23 +18,32 @@ namespace Condominios.API.Controllers
     {
         private readonly IClient _client;
         private readonly IMapper _mapper;
+        private readonly DataContext _context;
 
         public ClientsController(IClient client,
-                                 IMapper mapper)
+                                 IMapper mapper,
+                                 DataContext context)
         {
             _client = client;
             _mapper = mapper;
+            _context = context;
         }
 
         [HttpGet]
-        public IActionResult GetClients()
+        public async Task<ActionResult<IEnumerable<Client>>> GetClients()
         {
-            var clients = _client.GetClients();
-            var clientsDto = _mapper.Map<IEnumerable<ClientDto>>(clients);
-            var response = new ApiResponse<IEnumerable<ClientDto>>(clientsDto);
-
-            return Ok(response);
+            return await _context.Clients.ToListAsync();
         }
+
+        //public IActionResult GetClients()
+        //{
+        //    var clients = _client.GetClients();
+        //    var clientsDto = _mapper.Map<IEnumerable<ClientDto>>(clients);
+        //    var response = new ApiResponse<IEnumerable<ClientDto>>(clientsDto);
+
+
+        //    return Ok(response);
+        //}
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetClient(int id)
